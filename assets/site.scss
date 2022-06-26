@@ -1,0 +1,283 @@
+* {
+	font-family: 'Open Sans';
+	color: #1d1e1c;
+	font-weight: 400;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(251, 250, 250);
+}
+.wrapper {
+padding: 0 10% 0 10%;
+}
+.header {
+background-color: rgb(97, 112, 136);
+font-size: 20px;
+color: #ffffff;
+text-align: center;
+padding: 8px;
+}
+
+.title {
+text-align: center;
+font-size: 28px;
+color: #617189;
+padding: 8px;
+}
+
+hr {
+background: rgb(230, 230, 230);
+color: rgb(230, 230, 230);
+border:0px none;
+height:1px; /* высота 1px IE, Firefox, Opera, Safari */
+clear:both; /* для очистки, если тег идет после float елемента */
+}
+
+.names {
+h4{
+	color: #617189;
+}
+.flex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+display: flex;
+gap: 24px;
+justify-content: center;
+text-align: center;
+font-size: 12px;
+color: #617189;
+
+.clear {
+	position: relative;
+	top: 57px;
+	cursor: pointer;
+}
+
+.glassForm, .processingType {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.warn:focus {
+	outline: none !important;
+	border:1px solid red;
+	box-shadow: 0 0 10px #719ECE;
+	}
+
+.warn {
+	border-color: red;
+	color: red;
+}
+
+input {
+	flex: 0;
+	text-align: center;
+	border-radius: 4px;
+	border: 1px solid gray;
+	margin: 0;
+	width: 106px;
+	height: 38px;
+	padding: 0;
+	margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+select {
+	text-align: center;
+	border-radius: 4px;
+	border: 1px solid gray;
+	margin: 0;
+	width: 164px;
+	height: 40px;
+	//padding: 10px 20px;
+}
+
+
+.btn-group {
+	button{
+	background-color: #fff; 
+	border: 1px solid gray; 
+	color: black;
+	cursor: pointer;
+	float: left;
+	//border-radius: 4px;
+	height: 40px;
+	width: 33%;
+	padding-left: 14px;
+	padding-right: 14px;
+	} 
+
+	button:not(:last-child, :first-child) {
+	border-right: none;
+	border-left: none;
+	
+	}
+	.count:hover {
+	background: #fff;
+	cursor:default;
+	}
+
+	:after {
+	content: "";
+	clear: both;
+	display: table;
+	}
+	button:hover {
+	background-color: gray;
+	}
+
+	:last-child {
+	font-size: 16px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-left: none;
+	}
+	:first-child{
+	font-size: 16px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	border-right: none;
+	}
+}
+.sumNumber {
+	cursor: default;
+	font-size: 16px;
+	padding: 8px;
+	align-items: center;
+	word-break: break-word;
+	min-width: 91px;
+	max-width: 91px;
+}
+.hint {
+	cursor: pointer;
+	top: 3px;
+	position: relative;
+}
+.tooltip {
+	z-index: 1;
+	box-shadow: 0px 0px 6px 0px grey;
+border: 1px solid gray;
+padding: 10px;
+border-radius: 4px;
+position: absolute;
+background-color: white;
+ ul {
+	li::marker {
+		color: #617189;
+	}
+	}
+}
+}
+
+.v-select {
+	position: relative;
+	cursor: pointer;
+	top: -1px;
+	width: 200px;
+	.title {
+		margin-block-start: 0;
+		margin-block-end: 0;
+		height: 38px;
+		border: solid 1px gray;
+		background: #fff;
+		padding: 0px 30px;	
+		border-radius: 4px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		div {
+			padding: 4px;
+			//height: 40px;
+			margin: 0;
+		}
+		div:hover {
+			background: #d0d4db;
+		}
+
+		p {
+			font-weight: 400;
+			font-size: 12px;
+			margin-left: 14px;
+		}
+	}
+	.options {
+		border: 1px solid gray;
+		position: relative;
+		top: 1px;
+		border-radius: 2px;
+		background: #fff;
+		width: 198px;
+		div {
+			padding: 0 30px;
+			
+			display: flex;
+			flex-direction: row;
+			align-content: center;
+			align-items: center;
+			//height: 40px;
+			margin: 0;
+		}
+		div:hover {
+			background: #d0d4db;
+		}
+
+		p {
+			font-weight: 400;
+			font-size: 12px;
+			margin-left: 14px;
+		}
+	}
+	.arrow {
+		transition: transform ease-in-out 0.5s;
+		transform: rotate(180deg);
+		position: absolute;
+		right: 10px;
+		top: 18px;
+	}
+	.arrow_rotate {
+		transition: transform ease-in-out 0.5s;
+		transform: rotate(0deg) !important;
+	}
+}
+
+  .warning {
+	width: 0;
+	
+  }
+  span.warningText{
+	left: 30px;
+    top: 20px;
+	display:inline-block;
+	position: relative;
+	background: #fff;
+	width: 180px;
+	height: 50px;
+	line-height: 50px;
+	color:black;
+	text-align: center;
+	box-shadow: 0px 0px 6px 0px grey;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+}
+
+span.warningText:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 10px solid;
+	border-color: transparent transparent #8e8e8e transparent;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -10px;
+}
